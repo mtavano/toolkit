@@ -10,10 +10,5 @@ services:
       - ./data/nginx:/etc/nginx/conf.d:ro
 
   ursa-dev:
-    image: mtavano/ursadev:latest
+    image: mtavano/ursadev:0.1.2
     restart: on-failure
-    ports:
-      - "4069:4069"
-    expose:
-      - "4069"
-
