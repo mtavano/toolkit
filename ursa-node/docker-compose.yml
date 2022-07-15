@@ -10,5 +10,5 @@ services:
       - ./data/nginx:/etc/nginx/conf.d:ro
 
   ursa-dev:
-    image: mtavano/ursadev:0.1.2
+    image: mtavano/ursadev:0.2.1
     restart: on-failure
