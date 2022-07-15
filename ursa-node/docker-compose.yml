@@ -4,6 +4,8 @@ services:
   nginx:
     image: nginx
     restart: always
+    depends_on:
+      - ursa-dev
     ports:
       - "80:80"
     volumes:
@@ -12,3 +14,5 @@ services:
   ursa-dev:
     image: mtavano/ursadev:0.2.1
     restart: on-failure
+    expose:
+      - "4069"
